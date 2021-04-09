@@ -58,6 +58,7 @@ languageName ="English"
 contentDir = "content/en"
 # Weight used for sorting.
 weight = 1
+privacy_policy = "https://www.aisec.fraunhofer.de/en/data_protection.html"
 
 [languages.de]
 title = "SENSIBLE-KI"
@@ -66,6 +67,7 @@ languageName ="Deutsch"
 contentDir = "content/de"
 # Weight used for sorting.
 weight = 2
+privacy_policy = "https://www.aisec.fraunhofer.de/de/datenschutzerklaerung.html"
 
 [markup]
   [markup.goldmark]
@@ -85,8 +87,6 @@ section = ["HTML", "print"]
 
 [params]
 copyright = "Fraunhofer AISEC"
-privacy_policy = "https://www.aisec.fraunhofer.de/en/data_protection.html"
-
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
