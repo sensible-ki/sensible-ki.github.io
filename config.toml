@@ -26,6 +26,8 @@ pygmentsUseClassic = false
 # See https://help.farbox.com/pygments.html
 pygmentsStyle = "tango"
 
+
+
 # Configure how URLs look like per section.
 [permalinks]
 blog = "/:section/:year/:month/:day/:slug/"
@@ -68,6 +70,15 @@ contentDir = "content/de"
 # Weight used for sorting.
 weight = 2
 privacy_policy = "https://www.aisec.fraunhofer.de/de/datenschutzerklaerung.html"
+
+# Menu
+[menu]
+        [[languages.de.menu.main]]
+        name = "Kontakt"
+        url = "mailto:info@aisec.fraunhofer.de"
+        [[languages.en.menu.main]]
+        name = "Contact"
+        url = "mailto:info@aisec.fraunhofer.de"
 
 [markup]
   [markup.goldmark]
