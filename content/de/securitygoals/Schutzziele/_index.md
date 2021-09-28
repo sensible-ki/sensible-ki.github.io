@@ -27,7 +27,7 @@ Ein Angreifer, der auf alle drei Aspekte vollen Zugriff hat, wird als Angreifer 
 Jedoch sind derartige Angreifer in der Praxis nicht komplett realistisch. Realistischer sind stattdessen Angreifer mit "begrenztem Wissen".
 
 ### Angreifer Fähigkeiten
-Die Fähigkeiten eines Angreifers können anhand des Einflusses, welche er auf das trainierte Modell der KI-Anwendung und dessen Trainingsdaten hat.
+Die Fähigkeiten eines Angreifers können anhand des Einflusses, welche er auf das trainierte Modell der KI-Anwendung und dessen Trainingsdaten hat folgende sein:
 | Trainingsdaten | KI-Modell |
 |--|--|
 | - Hinzufügen oder Löschen beliebiger Datenpunkten und beliebigen Labels dazu|- Unbegrenzte Anzahl an Interaktionen nach dem Training  |
@@ -43,7 +43,7 @@ Die Fähigkeiten eines Angreifers können anhand des Einflusses, welche er auf d
 
 Integrität von KI-Modellen bedeutet, dass die Modelle "richtige" Vorhersagen auf verschiedensten eintreffenden Daten machen. 
 
-> Als Beispiel kann man sich einen Spamfilter vorstellen, der auf sinnvollen Daten wurde. Dieser sollte auch noch korrekt funktionieren, d.h. Spam erkennen, auch wenn ein Angreifer eine Spam Email gezielt so verfasst, dass sie viele Elemente einer Nicht-Spam Email beinhaltet.
+> Als Beispiel kann man sich einen Spamfilter vorstellen, der auf sinnvollen Daten trainiert wurde. Dieser sollte auch noch korrekt funktionieren, d.h. Spam erkennen, auch wenn ein Angreifer eine Spam Email gezielt so verfasst, dass sie viele Elemente einer Nicht-Spam Email beinhaltet.
 
 <details open=""><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
 Integrität kann in KI-Anwendungen auf drei verschiedenen Ebenen beeinträchtigt werden:
@@ -56,7 +56,7 @@ Integrität kann in KI-Anwendungen auf drei verschiedenen Ebenen beeinträchtigt
 Auf der Datenebene können Inputs des Modells gezielt beeinflusst werden, um zu falschen Vorhersagen zu führen.
 
 #### Modellebene
-Auf der Modellebene können parameter des Modells während oder nach dem Training so beeinflusst werden, dass das Modell falsche Vorhersagen macht.
+Auf der Modellebene können Parameter des Modells während oder nach dem Training so beeinflusst werden, dass das Modell falsche Vorhersagen macht.
 
 #### Objektebene
 Auf der Objektebene können Modelloutputs so manipuliert werden, dass das darumliegende System, welches auf der KI basiert falsch auf den zugehörigen Input reagiert.

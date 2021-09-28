@@ -1,7 +1,7 @@
 ---
-date: 2021-09-17
+date: 2021-09-27
 title: "KI-Anwendungen"
-linkTitle: "KI Anwendungen"
+linkTitle: "KI-Anwendungen"
 weight: 6
 type: docs
 description: >
@@ -10,11 +10,12 @@ description: >
 
 Um KI-Anwendungen im mobilen und eingebetteten Bereich in einzelne Klassen bezüglich ihres Schutzbedarfes einzuteilen, 
 wurden im Projekt zahlreiche existierende KI-Anwendungen funktional evaluiert.
-Die evaluierten Anwendungen stammen aus einer großen Bandbreite von Anwendungebereichen 
+Die evaluierten Anwendungen stammen aus einer großen Bandbreite von Anwendungsbereichen 
 (Biometrie, Smart Home, Smart Living, Smart Devices, etc.),
 um eine möglichst allgemeine und auf eine Vielzahl von Anwendungen passende Klassifizierung zu ermitteln.
-Aus dieser funktionalien Evaluierung wurden im Projekt dann die einzelnen Klassen abgeleitet, welche auf der nächsten Seite [link]() dargestellt werden.
-Im Folgenden werden drei unterschiedliche Anwendungen anhand der ermittelten Klassen evaluieren, 
+Aus dieser funktionalen Evaluierung wurden im Projekt dann die einzelnen Klassen abgeleitet, welche auf der [folgenden Seite]({{< relref "klassen" >}}) dargestellt werden.
+
+Im Folgenden werden vier unterschiedliche Anwendungen anhand der ermittelten Klassen evaluiert, 
 um beispielhaft aufzuzeigen, wie eine Klassifizierung erfolgen kann,
 und um zu beispielhaft zu validieren, dass die ermittelten Klassen auf solch vielfältige Anwendungen anwendbar sind.
 
@@ -112,9 +113,10 @@ und um zu beispielhaft zu validieren, dass die ermittelten Klassen auf solch vie
 
 
 
+<!-- Grafik Hierarchie KI Anwendungen -->
 
-
-
+<img src="../icons_sets/KI_hierarchie.png" />
+<br><br><br>
 
 <!-- KI Anwendungen -->
 

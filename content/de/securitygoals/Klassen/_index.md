@@ -1,20 +1,22 @@
 ---
-date: 2021-09-17
+date: 2021-09-27
 title: "Klassen"
 linkTitle: "Klassen"
 weight: 5
 type: docs
 description: >
-  Klassen von KI Anwendungen
+  Klassen von KI-Anwendungen
 ---
 
 # Klassifizierung von KI-Anwendungen
-Ziel des Projektes SensibleKI ist es, KI-Anwendungen im eingebetteten und mobilen Bereich zu sichern.
+Ziel des Projektes Sensible-KI ist es, KI-Anwendungen im eingebetteten und mobilen Bereich zu sichern.
 Um eine möglichst standardisierte Absicherung zu gewährleisten, ist es notwendig, Klassen von Anwendungen zu definieren, welche Gemeinsamkeiten teilen.
 Anhand dieser Klassen kann dann der Schutzbedarf ermittelt werden.
-Basierend auf der Evaluierung einer Großen Anzahl von KI-Anwendungen, wurden im Projekt die im Folgenden dargestellten Klassen identifiziert.
+
+Basierend auf der Evaluierung einer großen Anzahl von KI-Anwendungen wurden im Projekt die im Folgenden dargestellten Klassen identifiziert.
 Es handelt sich dabei um eine vertikale Klassifizierung, welche auf verschiedenen Eigenschaften der KI-Anwendungen basiert. 
 
+Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ihr ganz individueller Schutzbedarf ermittelt werden.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -108,20 +110,13 @@ Es handelt sich dabei um eine vertikale Klassifizierung, welche auf verschiedene
     <td class="tg-031e">Manuelle Datenbearbeitung und ggf. manuelles Hinzufügen</td>
   </tr>
 
-  <tr>
-    <td class="tg-031e"><b>Klasse 2:</b></td>
-    <td class="tg-031e">Daten mit indirektem Personenbezug</td>
-  </tr>
-  <tr>
-    <td class="tg-031e"><b>Klasse 3:</b></td>
-    <td class="tg-031e">Daten mit direktem Personenbezug</td>
-  </tr>
+
 
 <tr>
     <th class="tg-ii5f" colspan="2"><h4> Klasse nach Verarbeitung der Trainingsdaten </h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Welche Art Maßnahmen werden auf den Daten ausgeführt?
+    <td class="tg-031e" colspan="2"><i>Wo wird das Modell trainiert?
 </i></td>
   </tr>
   <tr>
@@ -214,10 +209,6 @@ Es handelt sich dabei um eine vertikale Klassifizierung, welche auf verschiedene
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 2:</b></td>
-    <td class="tg-031e">dezentral und z.B. peer-to-peer zwischen Geräten</td>
-  </tr>
-  <tr>
-    <td class="tg-031e"><b>Klasse 3:</b></td>
     <td class="tg-031e">Whitebox</td>
   </tr>
 
@@ -279,7 +270,7 @@ Es handelt sich dabei um eine vertikale Klassifizierung, welche auf verschiedene
 
 </table>
 
-Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ihr ganz individueller Schutzbedarf ermittelt werden.
+
 
 
 
