@@ -1,22 +1,23 @@
 ---
 date: 2021-09-27
-title: "Klassen"
-linkTitle: "Klassen"
-weight: 5
+title: "KI-Klassen"
+linkTitle: "KI-Klassen"
+weight: 1
 type: docs
 description: >
-  Klassen von KI-Anwendungen
+  Systematik von KI-Anwendungen
 ---
 
-# Klassifizierung von KI-Anwendungen
-Ziel des Projektes Sensible-KI ist es, KI-Anwendungen im eingebetteten und mobilen Bereich zu sichern.
-Um eine möglichst standardisierte Absicherung zu gewährleisten, ist es notwendig, Klassen von Anwendungen zu definieren, welche Gemeinsamkeiten teilen.
-Anhand dieser Klassen kann dann der Schutzbedarf ermittelt werden.
+Ziel des Projektes **SENSIBLE-KI** ist es, KI-Anwendungen im eingebetteten und mobilen Bereich zu schützen. Um eine
+möglichst standardisierte Absicherung gewährleisten zu können, ist es notwendig, KI-Anwendungen zu systematisieren.
+Anhand von diskreten KI-Klassen kann dann der Schutzbedarf ermittelt werden.
 
-Basierend auf der Evaluierung einer großen Anzahl von KI-Anwendungen wurden im Projekt die im Folgenden dargestellten Klassen identifiziert.
-Es handelt sich dabei um eine vertikale Klassifizierung, welche auf verschiedenen Eigenschaften der KI-Anwendungen basiert. 
+Basierend auf der Evaluierung einer großen Anzahl von KI-Anwendungen wurden im Projekt die im Folgenden dargestellten
+Klassen identifiziert. Es handelt sich dabei um eine vertikale (d.h. mehrdimensionale) Klassifizierung, welche auf
+verschiedenen Eigenschaften der KI-Anwendungen basiert.
 
-Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ihr ganz individueller Schutzbedarf ermittelt werden.
+Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ihr ganz individueller Schutzbedarf
+ermittelt werden.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -33,7 +34,7 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
 <col style="width: 232px">
 </colgroup>
   <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klassen nach Input </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Herkunft</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Woher kommen die Daten?</i></td>
@@ -52,10 +53,11 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
   </tr>
 
   <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klassen nach Art der Daten </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Art der Daten</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Format der Nutzereingabe. Können diese manipuliert werden? Wie? (z.B. versteckte Sprachbefehle)
+    <td class="tg-031e" colspan="2"><i>Format der Nutzereingabe. Können diese manipuliert werden? Wie? (z.B. versteckte
+    Sprachbefehle)
 </i></td>
   </tr>
   <tr>
@@ -75,7 +77,7 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
     <td class="tg-031e">Sonstiges</td>
   </tr>
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klassen nach Personenbezug </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Personenbezug</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Wie schützenswert sind die Nutzereingaben? Enthalten sie Daten, die auf eine Privatperson oder andere sensible Informationen Rückschlüsse zulässt?
@@ -95,7 +97,7 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klasse nach Verarbeitung in der Pipeline </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Verarbeitung in der Pipeline</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Wie werden die Maßnahmen auf den Daten ausgeführt?
@@ -113,7 +115,7 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
 
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klasse nach Verarbeitung der Trainingsdaten </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Verarbeitung der Trainingsdaten</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Wo wird das Modell trainiert?
@@ -133,10 +135,10 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klassen nach Trainingszeitpunkten </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Trainingszeitpunkten</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Wann/ Wie oft?
+    <td class="tg-031e" colspan="2"><i>Wann bzw. wie oft wird das Modell trainiert?
 </i></td>
   </tr>
   <tr>
@@ -153,7 +155,7 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klasse nach Trainingsort </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Trainingsort</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Welche Art Maßnahmen werden auf den Daten ausgeführt?
@@ -177,7 +179,7 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klassen nach Deployment </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Deployment</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Gibt es evtl. Kommunikationswege, die angegriffen werden können?
@@ -197,7 +199,7 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klassen nach Modellzugriff </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Modellzugriff</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Welche Art Modellzugriff?
@@ -213,7 +215,7 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klassen nach Algorithmen </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Algorithmen</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Eventuell verschiedene Maßnahmen bei Neuronalen Netzwerken als klassischem Machine Learning?
@@ -229,7 +231,7 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klasse nach vorgenommenen Sicherheitsmaßnahmen </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Sicherheitsmaßnahmen</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Welche Art Maßnahmen bestehen bereits?
@@ -253,7 +255,7 @@ Indem eine Anwendung anhand dieser verschiedenen Ebenen eingeteilt wird, kann ih
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Klassen nach Art des Outputs </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Art des Outputs</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Wie detailliert ist der Output? Nur Klassifizierung oder auch Confidence Scores?

@@ -1,20 +1,23 @@
 ---
 date: 2021-09-27
-title: "AI applications"
-linkTitle: "AI applications"
-weight: 6
+title: "AI Examples"
+linkTitle: "AI Examples"
+weight: 5
 type: docs
 description: >
-  Functional evaluation of AI applications.
+  Examples of AI applications
 ---
 
 
 
-In order to categorize AI mobile and edge applications into several classes regarding their security goals, a functional evaluation was performed for numerous existing AI applications in this project.
-The evaluated applications originate from a wide scope (biometry, smart home, smart living, smart devices, etc.), to identify a general classification that suits a variety of applications.
-From this functional evaluation several classes were derived, which are listed on [this page]({{< relref "klassen" >}}).
+In order to categorize AI mobile and edge applications into several classes regarding their security goals, a functional
+evaluation was performed for numerous existing AI applications in this project. The evaluated applications originate
+from a wide scope (biometry, smart home, smart living, smart devices, etc.), to identify a general classification that
+suits a variety of applications. From this functional evaluation several [classes]({{< relref "AI_Classes" >}}) were
+derived.
 
-Below, four different applications will be evaluated along with its determined classes, showing how a classification can be achieved and to validate that the determined classes may be applied to numerous AI applications.
+Below, four different applications will be evaluated along with its determined classes, showing how a classification can
+be achieved and to validate that the determined classes may be applied to numerous AI applications.
 
 
 
@@ -113,14 +116,14 @@ Below, four different applications will be evaluated along with its determined c
 
 
 
-<!-- Grafik Hierarchie KI Anwendungen -->
+<!-- Grafik Hierarchie KI-Beispiele -->
 
-<img src="../icons_sets/ai_hierarchy.png" />
+<img src="ai_hierarchy.png" />
 <br><br><br>
 
-<!-- KI Anwendungen -->
+<!-- KI-Beispiele -->
 
-<center>
+
 <div class="slideshow-container">
 <div class="mySlides">
 
@@ -168,16 +171,6 @@ Below, four different applications will be evaluated along with its determined c
 </table>
 
 </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -231,8 +224,6 @@ Below, four different applications will be evaluated along with its determined c
 
 
 
-
-
 <div class="mySlides">
 
 <table class="tg" style="undefined;table-layout: fixed; width: 543px; height:650px">
@@ -283,7 +274,6 @@ Lasso method </span></li><li> <span style="font-weight:normal"> YOLOv4  </span><
 
 
 
-
 <div class="mySlides">
 <table class="tg" style="undefined;table-layout: fixed; width: 543px; height:650px">
 <colgroup>
@@ -331,10 +321,6 @@ Lasso method </span></li><li> <span style="font-weight:normal"> YOLOv4  </span><
 
 
 
-
-
-
-
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -346,21 +332,6 @@ Lasso method </span></li><li> <span style="font-weight:normal"> YOLOv4  </span><
   <span class="dot" onclick="currentSlide(3)"></span> 
   <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

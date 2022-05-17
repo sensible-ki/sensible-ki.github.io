@@ -1,11 +1,11 @@
 ---
 date: 2021-09-27
-title: "Security goals"
-linkTitle: "Security goals"
+title: "Security Goals"
+linkTitle: "Security Goals"
 type: docs
-weight: 5
+weight: 2
 description: >
-  Security goals
+  Security goals to be achieved for AI applications
 ---
 
 An important step for evaluating the security of systems using Artificial Intelligence (AI)- applications is to define specific security goals for the AI. With these security goals, applications may be rated and their protection needs can be determined.
@@ -39,7 +39,7 @@ The capabilities of an attacker can be the following, depending on the influence
 </p></details>&nbsp;
 
 ## Integrity
-<img src="../icons_sets/icon_integrity2.svg" />
+<img src="integrity.svg" />
 
 
 Integrity of AI models means the models make the right predictions for a variety of data.
@@ -72,7 +72,7 @@ On the other hand the controllability is compromised if the attacker teaches the
 
 ## Availability
 
-<img src="../icons_sets/icon_verfuegbarkeit2.svg" />
+<img src="verfuegbarkeit.svg" />
 
 Availability in AI models ensures that the model fulfills the the functionality it is used for.
 
@@ -87,7 +87,7 @@ If the output of an AI model is integrated into the function of the system this 
 
 ## Confidentiality
 
-<img src="../icons_sets/icon_vertraulichkeit3.svg" style="width:770px" />
+<img src="vertraulichkeit.svg" style="width:770px" />
 
 Confidentiality describes a state in which the internal properties and confidential information on the trained model remain hidden from a potential attacker.
 
@@ -103,7 +103,7 @@ With this information, the attacker could be able to steal the intellectual prop
 
 ## Privacy
 
-<img src="../icons_sets/icon_privacy3.svg" />
+<img src="privacy.svg" />
 
 Privacy in AI applications means the protecting the privacy of training data used to train the AI model. The models should withhold all private information.
 

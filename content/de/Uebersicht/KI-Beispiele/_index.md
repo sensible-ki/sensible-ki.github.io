@@ -1,23 +1,22 @@
 ---
 date: 2021-09-27
-title: "KI-Anwendungen"
-linkTitle: "KI-Anwendungen"
-weight: 6
+title: "KI-Beispiele"
+linkTitle: "KI-Beispiele"
+weight: 5
 type: docs
 description: >
-  Funktionale Evaluierung von KI-Anwendungen.
+  Beispiele eingebetteter und mobiler KI-Anwendungen
 ---
 
 Um KI-Anwendungen im mobilen und eingebetteten Bereich in einzelne Klassen bezüglich ihres Schutzbedarfes einzuteilen, 
-wurden im Projekt zahlreiche existierende KI-Anwendungen funktional evaluiert.
-Die evaluierten Anwendungen stammen aus einer großen Bandbreite von Anwendungsbereichen 
-(Biometrie, Smart Home, Smart Living, Smart Devices, etc.),
-um eine möglichst allgemeine und auf eine Vielzahl von Anwendungen passende Klassifizierung zu ermitteln.
-Aus dieser funktionalen Evaluierung wurden im Projekt dann die einzelnen Klassen abgeleitet, welche auf der [folgenden Seite]({{< relref "klassen" >}}) dargestellt werden.
+wurden im Projekt zahlreiche existierende KI-Anwendungen funktional evaluiert. Die evaluierten Anwendungen stammen aus
+einer großen Bandbreite von Anwendungsbereichen (Biometrie, Smart Home, Smart Living, Smart Devices, etc.), um eine
+möglichst allgemeine und auf eine Vielzahl von Anwendungen passende Klassifizierung zu ermitteln. Aus dieser
+funktionalen Evaluierung wurden im Projekt dann die einzelnen [Klassen]({{< relref "KI-Klassen" >}}) abgeleitet.
 
-Im Folgenden werden vier unterschiedliche Anwendungen anhand der ermittelten Klassen evaluiert, 
-um beispielhaft aufzuzeigen, wie eine Klassifizierung erfolgen kann,
-und um zu beispielhaft zu validieren, dass die ermittelten Klassen auf solch vielfältige Anwendungen anwendbar sind.
+Im Folgenden werden vier unterschiedliche Anwendungen anhand der ermittelten Klassen evaluiert, um beispielhaft
+aufzuzeigen, wie eine Klassifizierung erfolgen kann, und um zu beispielhaft zu validieren, dass die ermittelten Klassen
+auf solch vielfältige Anwendungen anwendbar sind.
 
 <style>
 
@@ -65,7 +64,6 @@ und um zu beispielhaft zu validieren, dass die ermittelten Klassen auf solch vie
   user-select: none;
 }
 
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -77,14 +75,10 @@ und um zu beispielhaft zu validieren, dass die ermittelten Klassen auf solch vie
   border-radius: 3px 0 0 3px;
 }
 
-
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-
 
 
 /* The dots/bullets/indicators */
@@ -104,6 +98,16 @@ und um zu beispielhaft zu validieren, dass die ermittelten Klassen auf solch vie
   background-color: #717171;
 }
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
 
 
@@ -113,17 +117,17 @@ und um zu beispielhaft zu validieren, dass die ermittelten Klassen auf solch vie
 
 
 
-<!-- Grafik Hierarchie KI Anwendungen -->
+<!-- Grafik Hierarchie KI-Beispiele -->
 
-<img src="../icons_sets/KI_hierarchie.png" />
+<img src="KI_hierarchie.png" />
 <br><br><br>
 
-<!-- KI Anwendungen -->
+<!-- KI-Beispiele -->
 
-<center>
+
 <div class="slideshow-container">
-<div class="mySlides">
 
+<div class="mySlides">
 <table class="tg" style="undefined;table-layout: fixed; width: 543px; height:650px">
 <colgroup>
 <col style="width: 157px">
@@ -168,14 +172,6 @@ und um zu beispielhaft zu validieren, dass die ermittelten Klassen auf solch vie
 </table>
 
 </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -332,9 +328,6 @@ Lasso method </span></li><li> <span style="font-weight:normal"> YOLOv4  </span><
 
 
 
-
-
-
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -346,20 +339,6 @@ Lasso method </span></li><li> <span style="font-weight:normal"> YOLOv4  </span><
   <span class="dot" onclick="currentSlide(3)"></span> 
   <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,11 +1,11 @@
 ---
 date: 2021-09-27
-title: "Classes"
-linkTitle: "Classes"
-weight: 5
+title: "AI Classes"
+linkTitle: "AI Classes"
+weight: 1
 type: docs
 description: >
-  Classes of AI applications
+  Taxonomy of AI applications
 ---
 
 # Classification of AI applications
