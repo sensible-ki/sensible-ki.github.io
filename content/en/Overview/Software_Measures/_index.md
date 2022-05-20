@@ -9,14 +9,15 @@ description: >
 ---
 
 In the following, a selection of protection measures which increase the **privacy** or **integrity** of *machine
-learning* (ML) models (e.g. *neural networks*) is presented.
+learning* (ML) models (e.g. neural networks) is presented.
 
 First, the general training of neural networks is described since the protective measures are applied within the
-training. A neural net learns to classify data points of a target data distribution by means of training data. Here,
-learning refers to the adjustment of the neural net's internal parameters in an iterative process. Therein, the neural
-net classifies training data, s.t. the predicted class is propagated back through the network to calculate the direction
-in which the parameters have to be adjusted in order to get close to the correct class. The adjustment is called
-*gradient descent*. The training is terminated when the model's prediction quality stops improving.
+training. A *neural network* is a complex mathematical function that is represented by interlinked layers which consist
+of many parameters. A neural net learns to classify data points of a target data distribution by means of training data.
+Here, learning refers to the adjustment of the neural net's internal parameters in an iterative process, the *training*.
+Therein, the neural net classifies training data, s.t. the predicted class is propagated back through the network to
+calculate the direction in which the parameters have to be adjusted in order to get close to the correct class. The
+adjustment is called *gradient descent*. The training is terminated when the model's prediction quality stops improving.
 
 <br>
 
@@ -28,8 +29,8 @@ in which the parameters have to be adjusted in order to get close to the correct
 
 Adversarial Retraining is a protection measure against so-called *adversarial examples* (AE). AEs are manipulated inputs
 for neural networks which aim at causing a wrong prediction. The manipulation is as subtle as human observers would not
-recognize it as such. In adversarial retraining, AEs are integrated into the training data set of the model to protect
-so that its adversarial robustness and hence its integrity is improved.
+recognize it as such. In *adversarial retraining*, AEs are integrated into the training data set of the model to protect
+so that its adversarial robustness and hence its **integrity** is improved.
 
 > One impressive example of adversarial attacks is the *one pixel attack* which only changes a single pixel of an image.
 This minor perturbation is sufficient in many cases to trick the targeted neural net s.t. it predicts a wrong class.
@@ -37,20 +38,20 @@ This minor perturbation is sufficient in many cases to trick the targeted neural
 <br>
 
 <details><summary><strong>Functioning</strong></summary><p style="margin-top: 12px;">
-An AE can be produced by altering a real data point that was classified by the target model. More precisely, the
-prediction is propagated back through the network up to the input data point, s.t. its direction towards a wrong
-prediction can be calculated. Accordingly, the input data point is perturbed just enough to be misclassified. Depending
-on the concrete kind of adversarial attack, this gradient descent within the data point is applied differently or
-repeatedly. AEs are produced within adversarial retraining and together with the training data are given to the model to
-train and protect.
+An AE can be produced within an <em>adversarial attack</em> by altering a real data point that was classified by the
+target model. More precisely, the prediction is propagated back through the network up to the input data point, s.t. its
+direction towards a wrong prediction can be calculated. Accordingly, the input data point is perturbed just enough to be
+misclassified. Depending on the concrete kind of adversarial attack, this gradient descent within the data point is
+applied differently or repeatedly. AEs are produced within adversarial retraining and together with the training data
+are given to the model to train and protect.
 </p></details>
 
 <br>
 
 <details><summary><strong>Usage</strong></summary><p style="margin-top: 12px;">
-Adversarial retraining cannot be applied to linear models like e.g. *support vector machines* or *linear regression*. In
-contrast, neural networks acquire a significantly improved robustness against AEs when retrained with adversarial
-retraining.
+Adversarial retraining cannot be applied to linear models like e.g. <em>support vector machines</em> or <em>linear
+regression</em>. In contrast, neural networks acquire a significantly improved robustness against AEs when retrained
+with adversarial retraining.
 </p></details>
 
 <br>
@@ -61,7 +62,7 @@ retraining.
 <br>
 <br>
 
-Differential Privacy (DP) is a popular metric that allows to measure the influence of particular data points on the
+*Differential Privacy* (DP) is a popular metric that allows to measure the influence of particular data points on the
 result of a data processing. This is equivalent to the privacy loss of the persons to which the data belongs. The
 privacy loss can be limited by inducing noise into the data processing. Although DP was originally invented in the
 context of databases, it is applied to *privacy-preserving ML* in recent years.
@@ -75,7 +76,7 @@ result, many Netflix users have been de-anonymized.
 <br>
 
 <details><summary><strong>Functioning</strong></summary><p style="margin-top: 12px;">
-In the context of ML, privacy can be protected by inserting noise into the information about training data during
+In the context of ML, <b>privacy</b> can be protected by inserting noise into the information about training data during
 training of a model. More precisely, the gradient corresponding to a single data point is clipped s.t. its norm does not
 exceed a certain value, and the gradient is perturbed by random noise. The combination of both techniques leads to a
 reduced privacy loss and even enables the quantification of it.
@@ -89,19 +90,19 @@ reduced privacy loss and even enables the quantification of it.
 <br>
 <br>
 
-Homomorphic Encryption (HE) enables the execution of mathematical operations like addition or multiplication on 
+*Homomorphic Encryption* (HE) enables the execution of mathematical operations like addition or multiplication on 
 encrypted data. Results are still present in an encrypted form and are visible only with knowledge of the corresponding
 decryption key. Note that the same results are obtained as if neither encryption nor decryption would have been applied. 
 
 > Researchers work on practical applications of HE like, e.g., the improvement of security and transparency of
-elections. Encrypted votes could be counted automatically---and therefore correctly---by means of the Paillier crypto
-system for example. This would enable authenticity of elections while also protecting the privacy of voters.
+elections. Encrypted votes could be counted automatically---and therefore correctly---by means of the *Paillier crypto
+system* for example. This would enable authenticity of elections while also protecting the privacy of voters.
 
 <br>
 
 <details><summary><strong>Usage</strong></summary><p style="margin-top: 12px;">
-HE could be used in ML to protect the privacy of persons whose data are used either for training of a model or for
-inference by allowing models to operate on encrypted data. Unfortunately, no such technique has been developed for
+HE could be used in ML to protect the <b>privacy</b> of persons whose data are used either for training of a model or
+for inference by allowing models to operate on encrypted data. Unfortunately, no such technique has been developed for
 neural networks so far.
 </p></details>
 
@@ -113,8 +114,8 @@ neural networks so far.
 <br>
 <br>
 
-Anomaly detection comprises methods to detect unusual patterns in data. Critical inputs like AEs can be filtered out of
-training data by means of anomaly detection. This leads to an improved robustness and thus to the integrity of ML
+*Anomaly detection* comprises methods to detect unusual patterns in data. Critical inputs like AEs can be filtered out of
+training data by means of anomaly detection. This leads to an improved robustness and thus to the **integrity** of ML
 models.
 
 > Anomaly detection is applied in many areas like for example text and image processing, fraud detection, or medicine.
@@ -124,8 +125,9 @@ models.
 <details><summary><strong>Usage</strong></summary><p style="margin-top: 12px;">
 Usually, anomaly detection is applied to improve the robustness of neural networks by using a second neural network that
 detects and removes critical inputs. This method requires additional computing resources. As an alternative to
-protecting the robustness, anomaly detection can be used to improve the privacy protection of training data in ML. Thus,
-membership inference attacks can be used to remove highly vulnerable data from the training dataset.
+protecting the robustness and <b>integrity</b>, anomaly detection can be used to improve the <b>privacy</b> protection
+of training data in ML. Thus, membership inference attacks can be used to remove highly vulnerable data from the
+training dataset.
 </p></details>
 
 <br>
