@@ -28,11 +28,17 @@ Jedoch sind derartige Angreifer in der Praxis nicht komplett realistisch. Realis
 
 ### Fähigkeiten des Angreifers
 Die Fähigkeiten eines Angreifers können anhand des Einflusses, welchen er auf das trainierte Modell der KI-Anwendung und dessen Trainingsdaten hat, folgende sein:
-| Trainingsdaten |||||| KI-Modell |
-| - | - | - | - | - | - | - |
-| Hinzufügen + Löschen beliebiger Datenpunkte/Labels |||||| Unbegrenzt viele Interaktionen nach dem Training |
-| Hinzufügen + Löschen bestimmter Datenpunkte |||||| Begrenzt viele Interaktionen nach dem Training |
-| Veränderung beliebiger/bestimmter Datenpunkte |||||| Manipulation des Trainingsprozesses |
+
+{{<table "table table-striped">}}
+
+| Trainingsdaten | KI-Modell |
+| - | - | 
+| Hinzufügen + Löschen beliebiger Datenpunkte/Labels | Unbegrenzt viele Interaktionen nach dem Training |
+| Hinzufügen + Löschen bestimmter Datenpunkte | Begrenzt viele Interaktionen nach dem Training |
+| Veränderung beliebiger/bestimmter Datenpunkte | Manipulation des Trainingsprozesses |
+
+{{</table>}}
+
 </p></details>&nbsp;
 
 
