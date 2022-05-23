@@ -38,7 +38,7 @@ Die Fähigkeiten eines Angreifers können anhand des Einflusses, welchen er auf 
 
 
 ## Integrität
-<img src="icon_integrity.svg" />
+<img src="integrity.svg" />
 
 Integrität von KI-Modellen bedeutet, dass die Modelle "richtige" Vorhersagen auf verschiedensten eintreffenden Daten machen. 
 
@@ -67,7 +67,7 @@ Im Kontext der Integrität stehen außerdem die **Verlässlichkeit** und **Beher
 
 ## Verfügbarkeit
 
-<img src="icon_verfuegbarkeit.svg" />
+<img src="accessibility.svg" />
 
 Bei der Verfügbarkeit in KI-Modellen geht es darum sicherzustellen, dass das Modell die Funktionalität erfüllt, für die es eingesetzt wird.
 
@@ -81,7 +81,7 @@ Wenn die Ausgabe des ML-Modells in die Funktion des Systems eingebunden ist, kan
 
 ## Vertraulichkeit
 
-<img src="icon_vertraulichkeit.svg" style="width:770px" />
+<img src="confidentiality.svg" style="width:770px" />
 
 
 Vertraulichkeit beschreibt den Zustand, dass interne Eigenschaften und vertrauliche Informationen über ein trainiertes Modell den Angreifern verborgen bleiben.
@@ -95,7 +95,7 @@ Ein Angriff auf die Vertraulichkeit kann es einem Angreifer ermöglichen, an sen
 
 ## Privatheit
 
-<img src="icon_privacy.svg" />
+<img src="privacy.svg" />
 
 Privatheit bezieht sich im KI-Anwendungsbereich auf die Privatheit der Trainingsdaten, auf denen KI-Modelle trainiert werden. Die Modelle sollten im besten Fall keine privaten Informationen über diese preisgeben.
 
