@@ -40,7 +40,7 @@ Beschrieben werden pro Lösung jeweils die notwendigen Voraussetzungen des Anwen
 | [Qualcomm TEE (QTEE / QSEE)](https://www.qualcomm.com/media/documents/files/guard-your-data-with-the-qualcomm-snapdragon-mobile-platform.pdf) | TZ | Ja (SFS API) | Nutzt neben TrustZone auch die Secure Processing Unit (SPU) (mancher) Qualcomm SoCs.  **Zertifizierungen:** [FIPS 140-2 Level 1 (Crypto Lib), FIPS Level 2 (crypto engine core), FIPS Level 1 (PRNG), FIPS Level 1 (Inline Crypto engine)](https://www.qualcomm.com/news/onq/2020/04/16/qualcomm-technologies-product-security-solutions-receive-vital-fips) |
 |[Kinibi](https://www.trustonic.com/technology/)|TZ|Ja|[Implementierung für Exynos Chips von Trustonic](https://azeria-labs.com/trustonics-kinibi-tee-implementation/). **Zertifizierungen:** [Common Criteria (TEE)](https://www.ssi.gouv.fr/uploads/2017/02/anssi_cc-2017_03-cible-publique.pdf) |
 |[TEEGRIS](https://developer.samsung.com/teegris/overview.html) | TZ |Ja|Für Samsung Exynos. TEEGRIS hat ab dem Samsung Galaxy S10 Kinibi [auf vielen Samsung-Smartphones abgelöst](https://www.riscure.com/blog/tee-security-samsung-teegris-part-1).|
-|[iTrustee](https://globalplatform.org/certified-products/huawei-itrustee-v3-0-on-kirin-980/) |TZ |Ja |Implementierung von Huawei. Hat Huaweis vorherige Implementierung, Trusted Core, auf neuen Huawei-Smartphones abgelöst **Zertifizierungen:** [CC EAL2+](https://www.commoncriteriaportal.org/products/) |
+|[iTrustee](https://globalplatform.org/certified-products/huawei-itrustee-v3-0-on-kirin-980/) |TZ |Ja |Implementierung von Huawei. Hat Huaweis vorherige Implementierung, Trusted Core, auf neuen Huawei-Smartphones abgelöst. **Zertifizierungen:** [CC EAL2+](https://www.commoncriteriaportal.org/products/) |
 |[Kinibi-M](https://www.trustonic.com/technical-articles/kinibi-m/) |TZM |k. A. |Implementierung für Arm Cortex-M Prozessoren von Trustonic. Momentan nur für Microchips SAM L11 verfügbar. |
 
 {{</table>}}
@@ -76,7 +76,7 @@ Die verschiedenen Typen von TRH sind schwierig voneinander abzugrenzen, da kein 
 #### **Implementierungen** 
 Für jede TRH ist jeweils der **Typ** analog zur obigen Beschreibung angegeben, sowie – im Falle der Mobilgeräte – die **Plattform**, in welche die Lösung integriert ist. Bei “stand-alone” Produkten, die je nach Schnittstelle mit beliebigen Plattformen genutzt werden können, ist dies entsprechend vermerkt. 
 
-[StrongBox Keymaster API](https://source.android.com/security/keystore) von Android ist eine mit Android Version 9 eingeführte API, die es Anwendungsentwicklern ermöglicht sicherzugehen, dass ihr Schlüsselmaterial von einem mit den StrongBox Anforderungen (separate CPU, sicherer Speicher, ein TRNG [^29] , Maßnahmen gegen Manipulationen) konformen Secure Element verwaltet und gespeichert wird. Bei TRH aus dem Mobilbereich ist deshalb angegeben, ob die jeweilige Lösung mit der StrongBox API genutzt werden kann **(StrongBox)**. 
+[StrongBox Keymaster API](https://source.android.com/security/keystore) von Android ist eine mit Android Version 9 eingeführte API, die es Anwendungsentwicklern ermöglicht sicherzugehen, dass ihr Schlüsselmaterial von einem mit den StrongBox Anforderungen (separate CPU, sicherer Speicher, ein TRNG<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, Maßnahmen gegen Manipulationen) konformen Secure Element verwaltet und gespeichert wird. Bei TRH aus dem Mobilbereich ist deshalb angegeben, ob die jeweilige Lösung mit der StrongBox API genutzt werden kann **(StrongBox)**. 
 
 <details><summary><strong>Tabelle 3: Tamper Resistant Hardware</strong></summary><p>
 {{<table "table table-striped">}}
@@ -135,8 +135,7 @@ Google stellt die vollumfängliche, frei verfügbare *Android Security Library* 
 - **Funktionsumfang:**
 Die *Android Security Library* stellt eine Vielzahl an Verfahren und Algorithmen bereit. Es existieren zahlreiche Algorithmen u.A. für Verschlüsselung (symmetrisch/asymmetrisch), Signaturen, Message Digest, Schlüsselgenerierung, Attestation. Zudem gibt es mit dem Android Keystore System eine API zur sicheren Verwahrung von Schlüsseln. Diese kann auf einigen Geräten mit StrongBox, einem integrierten HSM, genutzt werden. Die Anzahl der speicherbaren Schlüssel ist nicht begrenzt. In der Trusted Execution Engine (Tensor Security Core) können nur die von Google bereitgestellten Algorithmen ausgeführt werden. Auf den evaluierten Geräten wird mit großer Wahrscheinlichkeit Googles eigenes TEE Trusty TEE verwendet, um den Android KeyStore abzusichern, wenn StrongBox nicht genutzt wird bzw. nicht genutzt werden kann. 
 
-- **Performance:**
-
+- **Performance:**<br>
 *Tabelle 4: Performance – Pixel 5, Android 12*
 {{<table "table table-striped">}}
 |Algorithmus / Provider | BouncyCastle | AndroidKeyStore (Trusty TEE) |AndroidKeyStore + StrongBox |
@@ -148,7 +147,6 @@ Die *Android Security Library* stellt eine Vielzahl an Verfahren und Algorithmen
 secp256r1 ECDSA sign |5.882,35 ops/s |77,16 ops/s |9,54 ops/s |	
 |secp256r1 ECDSA verify |2.500,00 ops/s |2.500,00 ops/s |833,33 ops/s |
 {{</table>}}
-
 *Tabelle 5: Performance – Pixel 6 Pro, Android 12* 
 {{<table "table table-striped">}}
 |Algorithmus / Provider | BouncyCastle | AndroidKeyStore (Trusty TEE) |AndroidKeyStore + StrongBox |
@@ -176,11 +174,10 @@ Zusätzlich zur Android-Bibliotheken stellt Samsung folgende Funktionen zur Verf
   - *Weaver* (Android-Passwortauthentifizierung),  
   - *Credential Storage* (speichert Schlüssel, biometrische Daten usw.) und  
   - *Samsung Attestation Key* (unterstützt auch Firmware und weitere Geräte).  
-  
-Der Schlüsselspeicher *Knox Vault Storage* speichert eine unbegrenzte Anzahl an Schlüsseln. Der *Knox Vault Processor* führt ausschließlich von Samsung zur Verfügung gestellte Algorithmen aus. Auf den evaluierten Geräten wird mit großer Wahrscheinlichkeit Samsungs eigenes TEE TEEGRIS verwendet, welches mit dem Samsung Galaxy S10 eingeführt wurde, um den Android KeyStore abzusichern, wenn StrongBox nicht genutzt wird bzw. nicht genutzt werden kann.  
+  - Der Schlüsselspeicher *Knox Vault Storage* speichert eine unbegrenzte Anzahl an Schlüsseln.
+  - Der *Knox Vault Processor* führt ausschließlich von Samsung zur Verfügung gestellte Algorithmen aus. Auf den evaluierten Geräten wird mit großer Wahrscheinlichkeit Samsungs eigenes TEE TEEGRIS verwendet, welches mit dem Samsung Galaxy S10 eingeführt wurde, um den Android KeyStore abzusichern, wenn StrongBox nicht genutzt wird bzw. nicht genutzt werden kann.  
 
-- **Performance:**
-
+- **Performance:** <br>
 *Tabelle 6: Performance – Samsung Galaxy A50, Android 11*
 {{<table "table table-striped">}}
 |Algorithmus / Provider | BouncyCastle | AndroidKeyStore (TEEGRIS) |AndroidKeyStore + StrongBox |
@@ -192,8 +189,6 @@ Der Schlüsselspeicher *Knox Vault Storage* speichert eine unbegrenzte Anzahl an
 |secp256r1 ECDSA sign |4000 ops/s |63.29 ops/s |n.V.|
 |secp256r1 ECDSA verify |1724.14 ops/s |1298.7 ops/s |n.V. |
 {{</table>}}
-
-
 *Tabelle 7: Performance – Samsung Galaxy S20FE, Android 11* 
 {{<table "table table-striped">}}
 |Algorithmus / Provider | BouncyCastle | AndroidKeyStore (TEEGRIS) |AndroidKeyStore + StrongBox |
@@ -219,31 +214,28 @@ Apple stellt die frei verfügbare Bibliothek *Apple CryptoKit* zur Verfügung, w
 - **Funktionsumfang:** 
 *CryptoKit* bietet die Module *SecKey* API (für asymmetrische Schlüssel), Common Crypto Library (symmetrische Verschlüsselung, hashbasierte MACs, Message Digests, Attestation) und *CryptoTokenKit* (für Smart-Card-Support).  Es kann eine hohe Anzahl an ECC-256Bit-Schlüsseln in einem exklusiven Speicherbereich gespeichert werden. Andere Schlüsselformate werden nicht zur Verfügung gestellt. In der Trusted Execution Engine (Secure Enclave) können nur die von Apple bereitgestellten Algorithmen, also keine eigenen Applikationen, ausgeführt werden. 
 
-- **Performance:** 
-
+- **Performance:** <br>
 *Tabelle 9: Performance – iPhone X* 
 {{<table "table table-striped">}}
 |Algorithmus / Provider |ohne Secure Enclave |mit Secure Enclave |
 |--|--|--|
-|AES-128-GCM Decrypt[^50] (ECIES via secp256r1-Schlüssel)|763,26 MB/s |472,95 MB/s |
+|AES-128-GCM Decrypt<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> (ECIES via secp256r1-Schlüssel) |763,26 MB/s |472,95 MB/s|
 |AES-256-GCM Decrypt (ECIES via secp521r1-Schlüssel) |495,82 MB/s |n. V. |
 |secp256r1 ECDH key exchange |3.892,00 ops/s |135,97 ops/s |secp256r1 keygen |132,88 keys/s |79,77 keys/s |
 |secp256r1 ECDSA sign |3.769,10 ops/s |95,36 ops/s |
 |secp256r1 ECDSA verify |5.272,65 ops/s |1.492,70 ops/s |
 {{</table>}}
-
 *Tabelle 10: Performance – iPhone 12 Pro* 
 {{<table "table table-striped">}}
 |Algorithmus / Provider |ohne Secure Enclave |mit Secure Enclave |
 |--|--|--|
-|AES-128-GCM Decrypt(ECIES via secp256r1-Schlüssel) |1.849,27 MB/s |755,34 MB/s |
+|AES-128-GCM Decrypt (ECIES via secp256r1-Schlüssel) |1.849,27 MB/s |755,34 MB/s |
 |AES-256-GCM Decrypt (ECIES via secp521r1-Schlüssel) |1473,18 MB/s |n. V. |
 |secp256r1 ECDH key exchange |3.417,93 ops/s |148,43 ops/s |
 |secp256r1 keygen |192,37 keys/s |100,93 keys/s| 
 |secp256r1 ECDSA sign |3832,87 ops/s |124,64 ops/s|
 |secp256r1 ECDSA verify |6416,70 ops/s |2181,78 ops/s| 
 {{</table>}}
-
 *Tabelle 11: Performance – iPhone 13 Pro*
 {{<table "table table-striped">}}
 |Algorithmus / Provider |ohne Secure Enclave |mit Secure Enclave |
@@ -333,7 +325,7 @@ Das SE hat einen nach NIST SP800-90A implementierten PRNG. Es werden sowohl AES-
 <details><summary><strong>Zymkey 4i</strong></summary><p> 
 
 - **Zugänglichkeit:**
-  Die Dokumentation der Zymbit API ist sowohl auf der [Herstellerseite](https://docs.zymbit.com/api/) als auch als PDF-Version [^53] verfügbar. Es gibt eine C-API, eine C++-API und eine Python-API. Die jeweiligen Dokumentationen sind – insbesondere bezüglich der Methodenbeschreibungen in den unterschiedlichen APIs – an einigen Stellen inkonsistent. Man erhält also durch das Lesen der Python-API nicht dieselben Informationen über das Gerät und die Methoden, wie durch das Lesen der C-API. Auch die API auf der Herstellerseite unterscheidet sich von der PDF-Version. Weiterhin sind in der Dokumentation alle Funktionen für alle Zymbit-Geräte enthalten. Da die Funktionen keiner direkt erkennbaren Sortierung in Bezug auf die Verfügbarkeit auf den einzelnen Geräten folgt, muss dadurch bei jeder Funktion in der Beschreibung dieser überprüft werden, ob diese überhaupt auf dem Zymkey 4i unterstützt wird. Grundsätzlich wird jedoch durch den geringen Umfang an Funktionen bereitgestellten Beispielcode und die vorhandene Python-API die Nutzung auf für nicht-C-Programmierer eine Nutzung stark erleichtert. 
+  Die Dokumentation der Zymbit API ist sowohl auf der [Herstellerseite](https://docs.zymbit.com/api/) als auch als PDF-Version<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> verfügbar. Es gibt eine C-API, eine C++-API und eine Python-API. Die jeweiligen Dokumentationen sind – insbesondere bezüglich der Methodenbeschreibungen in den unterschiedlichen APIs – an einigen Stellen inkonsistent. Man erhält also durch das Lesen der Python-API nicht dieselben Informationen über das Gerät und die Methoden, wie durch das Lesen der C-API. Auch die API auf der Herstellerseite unterscheidet sich von der PDF-Version. Weiterhin sind in der Dokumentation alle Funktionen für alle Zymbit-Geräte enthalten. Da die Funktionen keiner direkt erkennbaren Sortierung in Bezug auf die Verfügbarkeit auf den einzelnen Geräten folgt, muss dadurch bei jeder Funktion in der Beschreibung dieser überprüft werden, ob diese überhaupt auf dem Zymkey 4i unterstützt wird. Grundsätzlich wird jedoch durch den geringen Umfang an Funktionen bereitgestellten Beispielcode und die vorhandene Python-API die Nutzung auf für nicht-C-Programmierer eine Nutzung stark erleichtert. 
   Die Nutzung des Zymkey ist theoretisch mit allen I2C-fähigen Geräten möglich, jedoch sind die Libraries zur Nutzung – zum Zeitpunkt der Evaluation – nur als Debian Pakete verfügbar, sodass eine Portierung erschwert wird.  
 
 - **Funktionsumfang:** 
@@ -396,6 +388,27 @@ Zur Markverbreitung sind keine Angaben möglich, da keine Daten verfügbar sind.
 |OP-TEE  |mittel – hoch |hoch |mittel – hoch |k. A.| 
 |Kinibi-M |gering |gering |k. A. |k. A. | 
 
-[^29]: True Random Number Generator
-[^50]: Hier wurde spezifisch das Entschlüsseln per ECIES gemessen, da nur dabei auf den asymmetrischen Schlüssel in der Secure Enclave zugegriffen werden muss.
-[^53]: https://s3.amazonaws.com/zk-sw-repo/zk_app_utils.py.pdf bzw. https://s3.amazonaws.com/zk-sw-repo/zk_app_utils.c.pdf
+
+<div class="footnotes" role="doc-endnotes">
+	<hr />
+	<ol>
+		<li id="fn:1" role="doc-endnote">
+			<p>
+				True Random Number Generator.
+				<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#8617;</a>
+			</p>
+		</li>
+		<li id="fn:2" role="doc-endnote">
+			<p>
+				Hier wurde spezifisch das Entschlüsseln per ECIES gemessen, da nur dabei auf den asymmetrischen Schlüssel in der Secure Enclave zugegriffen werden muss.
+				<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#8617;</a>
+			</p>
+		</li>
+    <li id="fn:3" role="doc-endnote">
+			<p>
+				https://s3.amazonaws.com/zk-sw-repo/zk_app_utils.py.pdf bzw. https://s3.amazonaws.com/zk-sw-repo/zk_app_utils.c.pdf
+				<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#8617;</a>
+			</p>
+		</li>
+	</ol>
+</div>

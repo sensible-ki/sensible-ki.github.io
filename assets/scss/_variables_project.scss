@@ -9,9 +9,3 @@ $secondary: #A23B72;
 $info: #1b65bc;
 $dark: #15346d;
 
-table {
-    @extend .table-striped;
-
-    @extend .table-responsive;
-    @extend .table;
-}
