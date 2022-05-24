@@ -18,117 +18,23 @@ Im Folgenden werden vier unterschiedliche Anwendungen anhand der ermittelten Kla
 aufzuzeigen, wie eine Klassifizierung erfolgen kann, und um zu beispielhaft zu validieren, dass die ermittelten Klassen
 auf solch vielfältige Anwendungen anwendbar sind.
 
-<style>
-
-<!-- CSS Tabellen -->
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-abx8{background-color:#c0c0c0;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-lqy6{text-align:right;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-.tg .tg-y6fn{background-color:#c0c0c0;text-align:left;vertical-align:top}
-.tg .tg-ufyb{font-style:italic;text-align:right;vertical-align:top}  
-
-
-<!-- Slideshow CSS -->
-* {box-sizing: border-box}
-.mySlides {display: none}
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dot:hover{
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-
-</style>
-
+<link rel="stylesheet" href="/css/style.css">
 <!-- Header -->
 
 
 
-<!-- Grafik Hierarchie KI-Beispiele -->
+<!-- Grafik Hierarchie AI_Examples -->
 
 <img src="KI_hierarchie.png" />
 <br><br><br>
 
-<!-- KI-Beispiele -->
+<!-- AI_Examples -->
 
 
-<div class="slideshow-container">
+<div class="slideshow-container" style="margin: auto">
 
 <div class="mySlides">
-<table class="tg" style="undefined;table-layout: fixed; width: 543px; height:650px">
+<table class="tg" style="table-layout: fixed; width: 543px; height:650px">
 <colgroup>
 <col style="width: 157px">
 <col style="width: 386px">
