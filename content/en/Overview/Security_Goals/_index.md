@@ -67,14 +67,14 @@ On the object level, the model's outputs may be manipulated in order to make the
 Integrity is also linked to **confidentiality** and **controllability**. In case of confidentiality, the attacker may achieve invalid system states due to nonsensical inputs. 
 On the other hand the controllability is compromised if the attacker teaches the system unintended behaviour on the model level.
 
-</p></details open="">&nbsp;
+</p></details>&nbsp;
 
 
 ## Availability
 
-<img src="verfuegbarkeit.svg" />
+<img src="confidentiality.svg" style="width:770px" />
 
-Availability in AI models ensures that the model fulfills the the functionality it is used for.
+Availability in AI models ensures that the model fulfills the functionality it is used for.
 
 > We take a look at the spam filter again. Availability aims less at declining spam (see integrity) but to ensure that all non-spam messages pass.
 
@@ -87,7 +87,7 @@ If the output of an AI model is integrated into the function of the system this 
 
 ## Confidentiality
 
-<img src="vertraulichkeit.svg" style="width:770px" />
+<img src="accessibility.svg" style="width:770px" />
 
 Confidentiality describes a state in which the internal properties and confidential information on the trained model remain hidden from a potential attacker.
 
