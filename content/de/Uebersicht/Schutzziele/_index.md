@@ -73,7 +73,7 @@ Im Kontext der Integrität stehen außerdem die **Verlässlichkeit** und **Beher
 
 ## Verfügbarkeit
 
-<img src="accessibility.svg" />
+<img src="availability.svg" />
 
 Bei der Verfügbarkeit in KI-Modellen geht es darum sicherzustellen, dass das Modell die Funktionalität erfüllt, für die es eingesetzt wird.
 

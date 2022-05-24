@@ -74,7 +74,7 @@ On the other hand the controllability is compromised if the attacker teaches the
 
 ## Availability
 
-<img src="confidentiality.svg" style="width:770px" />
+<img src="availability.svg" style="width:770px" />
 
 Availability in AI models ensures that the model fulfills the functionality it is used for.
 
@@ -89,7 +89,7 @@ If the output of an AI model is integrated into the function of the system this 
 
 ## Confidentiality
 
-<img src="accessibility.svg" style="width:770px" />
+<img src="confidentiality.svg" style="width:770px" />
 
 Confidentiality describes a state in which the internal properties and confidential information on the trained model remain hidden from a potential attacker.
 
