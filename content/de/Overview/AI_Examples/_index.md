@@ -12,7 +12,7 @@ Um KI-Anwendungen im mobilen und eingebetteten Bereich in einzelne Klassen bezü
 wurden im Projekt zahlreiche existierende KI-Anwendungen funktional evaluiert. Die evaluierten Anwendungen stammen aus
 einer großen Bandbreite von Anwendungsbereichen (Biometrie, Smart Home, Smart Living, Smart Devices, etc.), um eine
 möglichst allgemeine und auf eine Vielzahl von Anwendungen passende Klassifizierung zu ermitteln. Aus dieser
-funktionalen Evaluierung wurden im Projekt dann die einzelnen [Klassen]({{< relref "KI-Klassen" >}}) abgeleitet.
+funktionalen Evaluierung wurden im Projekt dann die einzelnen [Klassen]({{< relref "AI_Classes" >}}) abgeleitet.
 
 Im Folgenden werden vier unterschiedliche Anwendungen anhand der ermittelten Klassen evaluiert, um beispielhaft
 aufzuzeigen, wie eine Klassifizierung erfolgen kann, und um zu beispielhaft zu validieren, dass die ermittelten Klassen
