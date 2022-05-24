@@ -30,12 +30,14 @@ However, in practice such attackers are not realistic. Attackers with "limited k
 
 ### Attacker capabilities
 The capabilities of an attacker can be the following, depending on the influence he has on the trained model und it's training data
+{{<table "table table-striped">}}
 | Training data | AI model |
 |--|--|
-|- add or delete arbitrary data points and labels|  - unlimited number of interactions after training  |
-|- add or delete arbitrary data points without influencing labels|  - limited number of interactions after training|
-|- modification of arbitrary or single data points |  - manipulation of the training process |
-|- modification of labels of specific data points |  - influencing of training steps and future adjustments |
+| add or delete arbitrary data points and labels|  unlimited number of interactions after training  |
+|add or delete arbitrary data points without influencing labels|  limited number of interactions after training|
+| modification of arbitrary or single data points |   manipulation of the training process |
+| modification of labels of specific data points |   influencing of training steps and future adjustments |
+{{</table>}}
 </p></details>&nbsp;
 
 ## Integrity

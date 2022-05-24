@@ -253,7 +253,7 @@ Apple stellt die frei verfügbare Bibliothek *Apple CryptoKit* zur Verfügung, w
 
 ### Übersicht der Ergebnisse  
 
-*Tabelle 12: Übersicht der Ergebnisse* 
+*Tabelle 12: Übersicht der Ergebnisse für Mobilgeräte* 
 |Verfahren |Zugänglichkeit | Funktionalität|Performance |Marktverbreitung |
 |--|--|--|--|--|
 |Google Pixel | gut | hoch | starke Performance-Einbußen bei Verwendung der “AndroidKeyStore”-TEE gegenüber der Software-Implementierung; sehr starke Einbußen bei Verwendung des “StrongBox”-SE |sehr gering |
@@ -380,6 +380,7 @@ Zur Markverbreitung sind keine Angaben möglich, da keine Daten verfügbar sind.
 </p></details>&nbsp;
 
 ### Übersicht der Ergebnisse  
+*Tabelle 17: Übersicht der Ergebnisse für eingebettete Systeme*
 |Implementierung |Einstiegshürden |Umgesetzte Funktionalität |Performance |Markt-verbreitung |
 |--|--|--|--|--|
 |NXP SE050  |mittel – hoch |hoch |gering |k. A. |
