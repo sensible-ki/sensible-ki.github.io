@@ -30,7 +30,7 @@ nicht mehr verbessern kann, wird das Training beendet.
 
 Adversarial Retraining ist eine Abwehrtechnik gegen sogenannte *Adversarial Examples* (AE). AEs sind manipulierte Inputs
 für neuronale Netze, welche zu einer fehlerhaften Vorhersage führen sollen. Dabei ist die Manipulation so subtil, dass
-sie für den menschlichen Betrachter nicht erkennbar ist. Beim *Adversarial Retraining* werden solche AEs mit in das
+sie für den menschlichen Betrachter kaum erkennbar ist. Beim *Adversarial Retraining* werden solche AEs mit in das
 Training des zu schützenden Modells aufgenommen, um dessen Robustheit und damit seine **Integrität** zu erhöhen.
 
 > Ein besonders beeindruckendes Beispiel von Adversarial Attacks ist die *One-Pixel-Attack*. Dabei wird nur ein Pixel in

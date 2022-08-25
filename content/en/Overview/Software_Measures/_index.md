@@ -28,9 +28,9 @@ adjustment is called *gradient descent*. The training is terminated when the mod
 <br>
 
 Adversarial Retraining is a protection measure against so-called *adversarial examples* (AE). AEs are manipulated inputs
-for neural networks which aim at causing a wrong prediction. The manipulation is as subtle as human observers would not
-recognize it as such. In *adversarial retraining*, AEs are integrated into the training data set of the model to protect
-so that its adversarial robustness and hence its **integrity** is improved.
+for neural networks which aim at causing a wrong prediction. The manipulation is as subtle such that human observers can
+hardly recognize it as such. In *adversarial retraining*, AEs are integrated into the training data set of the model to
+protect so that its adversarial robustness and hence its **integrity** is improved.
 
 > One impressive example of adversarial attacks is the *one pixel attack* which only changes a single pixel of an image.
 This minor perturbation is sufficient in many cases to trick the targeted neural net s.t. it predicts a wrong class.

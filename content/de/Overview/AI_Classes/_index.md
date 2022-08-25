@@ -34,10 +34,10 @@ ermittelt werden.
 <col style="width: 232px">
 </colgroup>
   <tr>
-    <th class="tg-ii5f" colspan="2"><h4>Herkunft</h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Herkunft der Inputdaten</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Woher kommen die Daten?</i></td>
+    <td class="tg-031e" colspan="2"><i>Woher kommen die Inputdaten?</i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 1:</b></td>
@@ -49,16 +49,14 @@ ermittelt werden.
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 3:</b></td>
-    <td class="tg-031e">Sensordaten</td>
+    <td class="tg-031e">Sensor</td>
   </tr>
 
   <tr>
     <th class="tg-ii5f" colspan="2"><h4>Art der Daten</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Format der Nutzereingabe. Können diese manipuliert werden? Wie? (z.B. versteckte
-    Sprachbefehle)
-</i></td>
+    <td class="tg-031e" colspan="2"><i>Was ist das Format der Inputdaten?</i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 1:</b></td>
@@ -80,7 +78,7 @@ ermittelt werden.
     <th class="tg-ii5f" colspan="2"><h4>Personenbezug</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Wie schützenswert sind die Nutzereingaben? Enthalten sie Daten, die auf eine Privatperson oder andere sensible Informationen Rückschlüsse zulässt?
+    <td class="tg-031e" colspan="2"><i>Enthalten die Inputdaten sensible Informationen?
 </i></td>
   </tr>
   <tr>
@@ -97,28 +95,32 @@ ermittelt werden.
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4>Verarbeitung in der Pipeline</h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Verarbeitung der Inputdaten</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Wie werden die Maßnahmen auf den Daten ausgeführt?
+    <td class="tg-031e" colspan="2"><i>Werden die Inputdaten verarbeitet und wenn ja, wie?
 </i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 1:</b></td>
-    <td class="tg-031e">Feststehende automatisierte Datenverarbeitungspipeline</td>
+    <td class="tg-031e">nein</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 2:</b></td>
-    <td class="tg-031e">Manuelle Datenbearbeitung und ggf. manuelles Hinzufügen</td>
+    <td class="tg-031e">ja: automatisiert</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><b>Klasse 3:</b></td>
+    <td class="tg-031e">ja: manuell</td>
   </tr>
 
 
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4>Verarbeitung der Trainingsdaten</h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Vorbereitung der Trainingsdaten</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Wo wird das Modell trainiert?
+    <td class="tg-031e" colspan="2"><i>Womit werden die Trainingsdaten vorbereitet?
 </i></td>
   </tr>
   <tr>
@@ -127,7 +129,7 @@ ermittelt werden.
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 2:</b></td>
-    <td class="tg-031e">Anonymisierungemechanismen</td>
+    <td class="tg-031e">Anonymisierungsmechanismen</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 3:</b></td>
@@ -135,7 +137,7 @@ ermittelt werden.
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4>Trainingszeitpunkten</h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Trainingszeitpunkte</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Wann bzw. wie oft wird das Modell trainiert?
@@ -147,18 +149,14 @@ ermittelt werden.
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 2:</b></td>
-    <td class="tg-031e">Modell wird kontinuierlich trainiert. (online learning)</td>
-  </tr>
-  <tr>
-    <td class="tg-031e"><b>Klasse 3:</b></td>
-    <td class="tg-031e">Modell wird zu bestimmten Zeitpunkten aktualisiert (manuell)</td>
+    <td class="tg-031e">Modell wird kontinuierlich trainiert (online learning)</td>
   </tr>
 
 <tr>
     <th class="tg-ii5f" colspan="2"><h4>Trainingsort</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Welche Art Maßnahmen werden auf den Daten ausgeführt?
+    <td class="tg-031e" colspan="2"><i>Wo wird das Modell trainiert?
 </i></td>
   </tr>
   <tr>
@@ -182,16 +180,17 @@ ermittelt werden.
     <th class="tg-ii5f" colspan="2"><h4>Deployment</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Gibt es evtl. Kommunikationswege, die angegriffen werden können?
+    <td class="tg-031e" colspan="2"><i>Gibt es angreifbare Kommunikationswege?
 </i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 1:</b></td>
-    <td class="tg-031e">Anwendungen, die auf dem Gerät selbst deployt sind und nicht mit einem Server kommunizieren müssen.</td>
+    <td class="tg-031e">Anwendungen, die auf dem Gerät selbst deployt sind und nicht mit einem Server kommunizieren
+    müssen</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 2:</b></td>
-    <td class="tg-031e">Anwendungen, die die ein Modell auf dem Server nutzen. Wenn eine Anfrage an die KI auf einem Endgerät kommt, dann wird diese an den Server (über eine API) weitergeleitet und dort beantwortet</td>
+    <td class="tg-031e">Anwendungen, die ein Modell auf dem Server nutzen. Wenn eine Anfrage an die KI auf einem Endgerät kommt, dann wird diese an den Server (über eine API) weitergeleitet und dort beantwortet</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 3:</b></td>
@@ -199,26 +198,10 @@ ermittelt werden.
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4>Modellzugriff</h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Art des Modells</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Welche Art Modellzugriff?
-</i></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"><b>Klasse 1:</b></td>
-    <td class="tg-031e">Blackbox</td>
-  </tr>
-  <tr>
-    <td class="tg-031e"><b>Klasse 2:</b></td>
-    <td class="tg-031e">Whitebox</td>
-  </tr>
-
-<tr>
-    <th class="tg-ii5f" colspan="2"><h4>Algorithmen</h4> </th>
-  </tr>
-  <tr>
-    <td class="tg-031e" colspan="2"><i>Eventuell verschiedene Maßnahmen bei Neuronalen Netzwerken als klassischem Machine Learning?
+    <td class="tg-031e" colspan="2"><i>Welche Struktur hat das Modell?
 </i></td>
   </tr>
   <tr>
@@ -234,40 +217,44 @@ ermittelt werden.
     <th class="tg-ii5f" colspan="2"><h4>Sicherheitsmaßnahmen</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Welche Art Maßnahmen bestehen bereits?
+    <td class="tg-031e" colspan="2"><i>Wie wird das Modell geschützt?
 </i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 1:</b></td>
-    <td class="tg-031e">Softwareseitig</td>
+    <td class="tg-031e">softwareseitig</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 2:</b></td>
-    <td class="tg-031e">Hardwareseitig</td>
+    <td class="tg-031e">hardwareseitig</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 3:</b></td>
-    <td class="tg-031e">Beides</td>
+    <td class="tg-031e">beides</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 4:</b></td>
-    <td class="tg-031e">Weder noch</td>
+    <td class="tg-031e">weder noch</td>
   </tr>
 
 <tr>
     <th class="tg-ii5f" colspan="2"><h4>Art des Outputs</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Wie detailliert ist der Output? Nur Klassifizierung oder auch Confidence Scores?
+    <td class="tg-031e" colspan="2"><i>Was ist die Aufgabe des Modells?
 </i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 1:</b></td>
-    <td class="tg-031e">Nur Klassifizierung</td>
+    <td class="tg-031e">Klassifizierung</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Klasse 2:</b></td>
-    <td class="tg-031e">Klassifizierung und Confidence Score</td>
+    <td class="tg-031e">Regression</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><b>Klasse 3:</b></td>
+    <td class="tg-031e">Datenerzeugung</td>
   </tr>
 
 </table>

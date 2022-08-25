@@ -15,7 +15,7 @@ be determined.
 Similarly to the type of classical security goals in IT security, the following security goals were derived and
 transferred to the field of AI.
 
-<details open=""><summary><strong>Details about attack vector against AI applications</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details about attack vector against AI applications</strong></summary><p style="margin-top: 12px;">
 The attack vector against AI applications is best described using the knowledge and the skills of the attacker
 
 ### Attacker knowledge
@@ -56,7 +56,7 @@ Integrity of AI models means the models make the right predictions for a variety
 an attacker were to write spam mails containing many elements of a non-spam mail.
 
 
-<details open=""><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
 Integrity in AI applications can be impaired on three different levels. 
 
  1. Data level: targeted corruption of data the model should predict
@@ -91,7 +91,7 @@ Availability in AI models ensures that the model fulfills the functionality it i
 all non-spam messages pass.
 
 
-<details open=""><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
 If an attackers is targeting the availability of a model he makes the system decline harmless instances in which case
 the system can't work properly anymore. If the output of an AI model is integrated into the function of the system this
 can be seen as a denial-of-service attack.
@@ -109,7 +109,7 @@ remain hidden from a potential attacker.
 > The attacker should not be able to work out which words, characters or formatting the spam filter uses to detect spam.
 
 
-<details open=""><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
 An attack on the confidentiality may allow an attacker to gather sensitive and confidential information regarding the
 trained AI model, its properties, structure and parameters. With this information, the attacker could be able to steal
 the intellectual properties, manipulate or attack the privacy of the training data. 
@@ -127,7 +127,7 @@ should withhold all private information.
 wrote. Neither due to properties nor due to behaviour.
 
 
-<details open=""><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
 
 In case of an attack on a model's privacy the attacker may gain information regarding the - maybe sensitive - training
 data. This can lead to serious consequences for the privacy of the involved parties.
@@ -149,7 +149,7 @@ There are known attacks in existence against AI applications models targeting th
 |Availability| Model Stealing und Model Extraction|
 |Privacy| Model Inversion, Membership Inference, Attribute Inference, Property Inference|
 
-<details open=""><summary><strong>Details about the attacks</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details about the attacks</strong></summary><p style="margin-top: 12px;">
 
 ### Adversarial attacks
 

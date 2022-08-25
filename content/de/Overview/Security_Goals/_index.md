@@ -13,7 +13,7 @@ evaluieren, ist es, konkrete Schutzziele für die KI zu definieren. Anhand diese
 und ihr Schutzbedarf bestimmt werden. In Anlehnung an die klassischen Schutzziele aus der IT-Sicherheit wurden folgende
 vier Schutzziele herausgearbeitet und auf KI übertragen. 
 
-<details open=""><summary><strong>Details zum Angriffsvektor gegen KI-Anwendungen</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details zum Angriffsvektor gegen KI-Anwendungen</strong></summary><p style="margin-top: 12px;">
 Der Angriffsvektor gegen KI-Anwendungen lässt sich am besten über das Wissen und die Fähigkeiten der Angreifer
 beschreiben. 
 
@@ -22,9 +22,9 @@ Je nachdem, ob ein Angreifer vollen, teilweise, oder keinen Zugriff auf die Inte
 von *Black-Box*, *Gray-Box* und *White-Box*-Szenarien. Angreifer können dabei über Wissen und Zugriff auf folgende
 Aspekte verfügen:
 
- 1. Trainingsdaten der KI-Anwendung
- 2. Trainingsalgorithmus
- 3. Trainiertes Modell der KI-Anwendung und dessen Parameter
+1. Trainingsdaten der KI-Anwendung
+2. Trainingsalgorithmus
+3. Trainiertes Modell der KI-Anwendung und dessen Parameter
 
 Ein Angreifer, der auf alle drei Aspekte vollen Zugriff hat, wird als Angreifer mit "perfektem Wissen" bezeichnet.
 Solche Angreifer zu betrachten erlaubt es, **worst-case** Abschätzungen für die Sicherheit der KI-Systeme durchzuführen.
@@ -60,12 +60,12 @@ machen.
 noch korrekt funktionieren, d.h. Spam erkennen, auch wenn ein Angreifer eine Spam-E-Mail gezielt so verfasst, dass sie
 viele Elemente einer Nicht-Spam-E-Mail beinhaltet.
 
-<details open=""><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
 Integrität kann in KI-Anwendungen auf drei verschiedenen Ebenen beeinträchtigt werden:
 
- 1. Datenebene: Gezielte Korruption der Daten, die das Modell vorhersagen soll.
- 2. Modellebene: Gezielte Manipulation des Modellverhaltens oder der Modellparameter.
- 3. Output/Objektebene: Gezielte Manipulation der Reaktionen des KI-Systems auf spezifische Modellvorhersagen.
+1. Datenebene: Gezielte Korruption der Daten, die das Modell vorhersagen soll.
+2. Modellebene: Gezielte Manipulation des Modellverhaltens oder der Modellparameter.
+3. Output/Objektebene: Gezielte Manipulation der Reaktionen des KI-Systems auf spezifische Modellvorhersagen.
 
 #### Datenebene
 Auf der Datenebene können Inputs des Modells gezielt beeinflusst werden, um zu falschen Vorhersagen zu führen.
@@ -97,7 +97,7 @@ es eingesetzt wird.
 verweigern (siehe Integrität), sondern darum sicherzustellen, dass Nicht-Spam Nachrichten durchkommen und die Nutzerin
 damit ihr E-Mailpostfach sinnvoll nutzen kann.
 
-<details open=""><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
 Wenn ein Angreifer auf die Verfügbarkeit des Modells abzielt, veranlasst er das System dazu, gutartige Instanzen zu
 verweigern und dadurch nicht richtig zu arbeiten.
 
@@ -117,7 +117,7 @@ Modell den Angreifern verborgen bleiben.
 Formatierungen dieser besonders als Indikatoren für Spam nutzt.
 
 
-<details open=""><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
 Ein Angriff auf die Vertraulichkeit kann es einem Angreifer ermöglichen, an sensible und vertrauliche Informationen über
 das trainierte ML-Modell, seine Eigenschaften, Struktur und Parameter zu kommen. Dadurch könnte der Angreifer in der
 Lage sein, das im Modell repräsentierte geistige Eigentum zu stehlen, gezielter zu manipulieren, oder auch basierend auf
@@ -134,7 +134,7 @@ werden. Die Modelle sollten im besten Fall keine privaten Informationen über di
 > Bei einem Spamfilter, der auf privaten E-Mails von Alice and Bob trainiert wurde, sollen also weder sein späteres
 Verhalten noch seine Eigenschaften Rückschlüsse darauf zulassen, was Alice an Bob geschrieben hat.
 
-<details open=""><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details</strong></summary><p style="margin-top: 12px;">
 Bei einem Angriff auf die Privatheit des Modells kann ein Angreifer Informationen über die - möglicherweise sensiblen -
 Trainingsdaten erlangen. Dies kann schwerwiegende Auswirkungen auf die Privatsphäre der betroffenen Dateninhaber*innen
 haben.
@@ -159,7 +159,7 @@ Es existieren Attacken gegen KI-Anwendungen, welche gezielt die folgenden Schutz
 |Vertraulichkeit| Model Stealing und Model Extraction|
 |Privatheit| Model Inversion, Membership Inference, Attribute Inference, Property Inference|
 
-<details open=""><summary><strong>Details zu den Attacken</strong></summary><p style="margin-top: 12px;">
+<details><summary><strong>Details zu den Attacken</strong></summary><p style="margin-top: 12px;">
 
 ### Adversarial Attacken
 Bei Adversarial Attacken manipuliert ein Angreifer einen Datenpunkt, den das fertig trainierte KI-Modell voraussagen

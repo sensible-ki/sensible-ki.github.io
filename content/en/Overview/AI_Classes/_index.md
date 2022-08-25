@@ -9,17 +9,14 @@ description: >
 ---
 
 # Classification of AI applications
-The stated goal of the SENSIBLE-KI project is to secure edge and mobile AI applications.
+The stated goal of the SENSIBLE-KI project is to secure embedded and mobile AI applications.
+In order to ensure a standardized security protection, it is necessary to systematize AI applications.
+The specific needs for protection can then be determined by means of discrete AI classes.
 
-In order to ensure a standardised security model, it is necessary to define classes of applications which share similarities. 
-On the basis of these classes protection needs are determined.
-Based on the evaluation of a wide range of AI applications the following classes were identified in this project.
-
+Based on the evaluation of a wide range of AI applications, the following classes were identified in this project.
 It is a vertical classification which is based on different properties of the AI applications.
-The individual protection needs can be determined by categorising the application with these different levels.
 
-
-
+The individual protection needs can be determined by categorizing the application with these different levels.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -36,141 +33,140 @@ The individual protection needs can be determined by categorising the applicatio
 <col style="width: 232px">
 </colgroup>
   <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding input </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Source of Input Data</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Where does the data come from?</i></td>
+    <td class="tg-031e" colspan="2"><i>Where does the input data come from?</i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 1:</b></td>
-    <td class="tg-031e">Explicit user input</td>
+    <td class="tg-031e">explicit user input</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">Implicit user input (Tracking)</td>
+    <td class="tg-031e">implicit user input (Tracking)</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 3:</b></td>
-    <td class="tg-031e">Sensor data</td>
+    <td class="tg-031e">sensory data</td>
   </tr>
 
   <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding type of data </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Type of Input Data</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Format of user input. Can it be manipulated? How?
+    <td class="tg-031e" colspan="2"><i>What is the format of the input data?
 </i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 1:</b></td>
-    <td class="tg-031e">Image</td>
+    <td class="tg-031e">image</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">Audio</td>
+    <td class="tg-031e">audio</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 3:</b></td>
-    <td class="tg-031e">Text</td>
+    <td class="tg-031e">text</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 4:</b></td>
-    <td class="tg-031e">Other</td>
+    <td class="tg-031e">other</td>
   </tr>
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding data with personal connection </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Personal Reference</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>How worthy of protection is the input?</i></td>
+    <td class="tg-031e" colspan="2"><i>Does the input data contain sensitive information?</i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 1:</b></td>
-    <td class="tg-031e">non critical data</td>
+    <td class="tg-031e">non-critical</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">data with an indirect personal connection</td>
+    <td class="tg-031e">indirect personal reference</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 3:</b></td>
-    <td class="tg-031e">data with an direct personal connection</td>
+    <td class="tg-031e">direct personal reference</td>
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding processing in the pipeline </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Processing of Input Data</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>How are the tasks executed?
-</i></td>
+    <td class="tg-031e" colspan="2"><i>Is the Input Data processed and if yes, how?</i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 1:</b></td>
-    <td class="tg-031e">Fixed automatic processing pipeline</td>
+    <td class="tg-031e">no</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">manually processed data</td>
+    <td class="tg-031e">yes, automatically</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><b>Class 3:</b></td>
+    <td class="tg-031e">yes, manually</td>
   </tr>
 
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding processing of the training data </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Preparation of Input Data</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Which measures have been taken?
+    <td class="tg-031e" colspan="2"><i>How is the input data prepared?
 </i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class1:</b></td>
-    <td class="tg-031e">Data Cleansing</td>
+    <td class="tg-031e">data cleansing</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">Anonymisation</td>
+    <td class="tg-031e">anonymization</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 3:</b></td>
-    <td class="tg-031e">Feature Engineering</td>
+    <td class="tg-031e">feature engineering</td>
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding training time </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Training Time</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>When/ How often?
+    <td class="tg-031e" colspan="2"><i>When and how often is the model trained?
 </i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 1:</b></td>
-    <td class="tg-031e">Trained once (offline learning)</td>
+    <td class="tg-031e">model is trained once (offline learning)</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">Trained continuous. (online learning)</td>
-  </tr>
-  <tr>
-    <td class="tg-031e"><b>Class 3:</b></td>
-    <td class="tg-031e"> Updated to certain times (manually)</td>
+    <td class="tg-031e">model is trained continuously (online learning)</td>
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding training location </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Training Location</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Where has the model been trained?
+    <td class="tg-031e" colspan="2"><i>Where is the model trained?
 </i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 1:</b></td>
-    <td class="tg-031e">decentral und decoupled between diffenrent devices </td>
+    <td class="tg-031e">decentralized und decoupled between different devices</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">decentral, peer-to-peer</td>
+    <td class="tg-031e">decentralized, peer-to-peer</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 3:</b></td>
-    <td class="tg-031e">central on a server</td>
+    <td class="tg-031e">centralized on a server</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 4:</b></td>
@@ -178,10 +174,10 @@ The individual protection needs can be determined by categorising the applicatio
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding deployment </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Deployment</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Are there communication paths that can be attacked?
+    <td class="tg-031e" colspan="2"><i>Are there vulnerable communication paths?
 </i></td>
   </tr>
   <tr>
@@ -198,26 +194,10 @@ The individual protection needs can be determined by categorising the applicatio
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding access to model </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Type of Model</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>Which type of access?
-</i></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"><b>Class 1:</b></td>
-    <td class="tg-031e">Blackbox</td>
-  </tr>
-  <tr>
-    <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">Whitebox</td>
-  </tr>
-
-<tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding algorithm </h4> </th>
-  </tr>
-  <tr>
-    <td class="tg-031e" colspan="2"><i>Differences between neural networks and classical machine learning?
+    <td class="tg-031e" colspan="2"><i>What is the structure of the model?
 </i></td>
   </tr>
   <tr>
@@ -226,11 +206,11 @@ The individual protection needs can be determined by categorising the applicatio
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">Neural networks</td>
+    <td class="tg-031e">neural networks</td>
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding taken security measures </h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Protection Measures</h4> </th>
   </tr>
   <tr>
     <td class="tg-031e" colspan="2"><i>Which measures have been taken?
@@ -238,35 +218,39 @@ The individual protection needs can be determined by categorising the applicatio
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 1:</b></td>
-    <td class="tg-031e">Software measures</td>
+    <td class="tg-031e">software measures</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">Hardware measures</td>
+    <td class="tg-031e">hardware measures</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 3:</b></td>
-    <td class="tg-031e">Both</td>
+    <td class="tg-031e">both</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 4:</b></td>
-    <td class="tg-031e">Neither</td>
+    <td class="tg-031e">neither</td>
   </tr>
 
 <tr>
-    <th class="tg-ii5f" colspan="2"><h4> Classes regarding types of output</h4> </th>
+    <th class="tg-ii5f" colspan="2"><h4>Type of Output</h4> </th>
   </tr>
   <tr>
-    <td class="tg-031e" colspan="2"><i>How detailled is the output? Only classification or also confidence scores?
+    <td class="tg-031e" colspan="2"><i>What is the model's task?
 </i></td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 1:</b></td>
-    <td class="tg-031e">Only classification</td>
+    <td class="tg-031e">classification</td>
   </tr>
   <tr>
     <td class="tg-031e"><b>Class 2:</b></td>
-    <td class="tg-031e">Only classification and confidence scores</td>
+    <td class="tg-031e">regression</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><b>Class 3:</b></td>
+    <td class="tg-031e">data creation</td>
   </tr>
 
 </table>
