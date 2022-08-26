@@ -5,9 +5,6 @@ title: "Übersicht"
 linkTitle: "Übersicht"
 type: docs
 weight: 20
-menu:
-  main:
-    weight: 20
 ---
 
 [//]: # (This may be the most platform independent comment)
