@@ -12,3 +12,26 @@ The site and most of its contents are licensed under the
 [Apache License 2.0](https://github.com/sensible-ki/sensible-ki.github.io/blob/main/LICENSE).
 
 This license does not cover partner logos and background images, please review the [NOTICE](https://github.com/sensible-ki/sensible-ki.github.io/blob/main/NOTICE) file.
+
+## Editing site
+### Prerequisites
+* Hugo
+* npm
+### Clone repository
+```
+git clone https://github.com/sensible-ki/sensible-ki.github.io.git
+```
+### Fetch submodules recursively!
+
+```
+git submodule update --init --recursive
+```
+### Install dependencies
+```
+npm install
+cd themes/docsy && npm install
+```
+### Serve locally
+```
+hugo serve
+```
