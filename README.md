@@ -17,19 +17,14 @@ This license does not cover partner logos and background images, please review t
 ### Prerequisites
 * Hugo
 * npm
+* go
 ### Clone repository
 ```
 git clone https://github.com/sensible-ki/sensible-ki.github.io.git
 ```
-### Fetch submodules recursively!
-
-```
-git submodule update --init --recursive
-```
 ### Install dependencies
 ```
 npm install
-cd themes/docsy && npm install
 ```
 ### Serve locally
 ```

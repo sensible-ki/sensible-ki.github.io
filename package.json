@@ -1,26 +1,25 @@
 {
-  "name": "tech-doc-hugo",
+  "name": "sensible-ki-web",
   "version": "0.0.1",
-  "description": "Hugo theme for technical documentation.",
+  "description": "Secure and trustworthy mobile AI",
   "main": "none.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/google/docsy-example.git"
+    "url": "git+git@github.com:sensible-ki/sensible-ki.github.io.git"
   },
   "author": "",
-  "license": "ISC",
+  "private": true,
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/google/docsy-example/issues"
+    "url": "https://github.com/sensible-ki/sensible-ki.github.io/issues"
   },
-  "homepage": "https://github.com/google/docsy-example#readme",
+  "homepage": "https://www.sensible-ki.de/",
   "devDependencies": {
-    "autoprefixer": "^9.8.8",
-    "docsy": "github:google/docsy",
-    "hugo-extended": "^0.110.0",
-    "postcss": "^8.4.21",
-    "postcss-cli": "^7.1.2"
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.7",
+    "postcss-cli": "^9.0.2"
   }
 }

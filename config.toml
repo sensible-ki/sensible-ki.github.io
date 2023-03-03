@@ -3,9 +3,6 @@ title = "SENSIBLE-KI"
 
 enableRobotsTXT = true
 
-# Hugo allows theme composition (and inheritance). The precedence is from left to right.
-theme = ["docsy"]
-
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
@@ -121,7 +118,7 @@ version = "0.0"
 url_latest_version = "https://www.sensible-ki.de"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/sensible-ki/"
+github_repo = "https://github.com/sensible-ki/sensible-ki.github.io"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 github_project_repo = "https://github.com/sensible-ki/sensible-ki.github.io"
 
@@ -191,3 +188,16 @@ enable = false
 	url = "https://github.com/sensible-ki/"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
+
+[module]
+  # uncomment line below for temporary local development of module
+  # replacements = "github.com/google/docsy -> ../../docsy"
+  [module.hugoVersion]
+    extended = true
+    min = "0.73.0"
+  [[module.imports]]
+    path = "github.com/google/docsy"
+    disable = false
+  [[module.imports]]
+    path = "github.com/google/docsy/dependencies"
+    disable = false
