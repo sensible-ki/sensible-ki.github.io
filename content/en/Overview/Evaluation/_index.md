@@ -1,7 +1,7 @@
 ---
 date: 2023-03-01
-title: "Measure Evaluation"
-linkTitle: "Measure Evaluation"
+title: "Evaluation"
+linkTitle: "Evaluation"
 type: docs
 weight: 6
 description: >
