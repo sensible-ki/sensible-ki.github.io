@@ -2,7 +2,7 @@
 date: 2021-09-27
 title: "KI-Beispiele"
 linkTitle: "KI-Beispiele"
-weight: 5
+weight: 2
 type: docs
 description: >
   Beispiele eingebetteter und mobiler KI-Anwendungen

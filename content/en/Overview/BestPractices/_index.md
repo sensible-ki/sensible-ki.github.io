@@ -3,7 +3,7 @@ date: 2024-02-26
 title: "Best Practices"
 linkTitle: "Best Practices"
 type: docs
-weight: 6
+weight: 8
 description: >
   Best Practice Recommendations
 ---
@@ -29,6 +29,11 @@ The machine learning algorithm used in the "SeamlessMe" demonstrator is a one-cl
 
 ### Self identification (Self-ID) 
 In the application of the demonstrator "Self-ID", a binary classifier (self-image vs. external image) is trained on a population. Using eye-tracking data, this classifier learns to distinguish which class of facial images the user is currently seeing. The training process takes place in advance - offline - and on the basis of previously collected training data. If personal enrollment is necessary, it takes place on the end device and the trained model is then transferred to the server. The inference runs online on the server. The eye-tracking data is transferred from the client to the server which evaluates the result and initiates appropriate measures if necessary.
+<!-- 1920 x 1080 -->
+<video width="80%" controls>
+  <source src="Self-ID_SKI-BMWK_EN.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 ## Security Measures
 ### Adversarial Training 

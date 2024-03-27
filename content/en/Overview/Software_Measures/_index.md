@@ -3,7 +3,7 @@ date: 2022-03-08
 title: "Software Measures"
 linkTitle: "Software Measures"
 type: docs
-weight: 3
+weight: 4
 description: >
   Software-based protective measures against attacks on AI applications
 ---

@@ -3,7 +3,7 @@ date: 2021-09-27
 title: "Security Goals"
 linkTitle: "Security Goals"
 type: docs
-weight: 2
+weight: 3
 description: >
   Security goals to be achieved for AI applications
 ---

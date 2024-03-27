@@ -2,7 +2,7 @@
 date: 2021-09-27
 title: "AI Examples"
 linkTitle: "AI Examples"
-weight: 5
+weight: 2
 type: docs
 description: >
   Examples of AI applications

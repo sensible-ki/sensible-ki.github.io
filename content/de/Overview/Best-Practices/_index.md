@@ -3,7 +3,7 @@ date: 2024-02-26
 title: "Best Practices"
 linkTitle: "Best Practices"
 type: docs
-weight: 6
+weight: 8
 description: >
   Best Practice Recommendations
 ---
@@ -27,7 +27,12 @@ Innerhalb des Forschungsprojekt wurden zwei Demonstratoren entwickelt. Der Demon
 ### Gang-Authentifizierung (SeamlessMe) 
 Der im Demonstrator “SeamlessMe” eingesetzte Machine-Learning-Algorithmus ist eine Einzelklassen-Klassifizierung (One Class Classification), die durch eine Ausreißererkennungs-Methodik (Novelty Detection) erweitert wird. Ein generischer Klassifikator (Generic Classifier) wird auf das mobile Endgerät geladen. Daraufhin lernt das Modell lokal anhand der auf dem Gerät gesammelten Benutzerdaten (User Specific Classifier). Das trainierte Modell wird dann verwendet, um ein Trust Level (Konfidenzwert) zu generieren. Die Berechnung des Vertrauensniveaus des Benutzers erfolgt lokal auf dem Smartphone und ohne Kommunikation mit einem externen Server. Sowohl das Training als auch die Inferenz finden also direkt auf dem Endgerät statt. 
 ### Selbstvalidierung (Self-ID) 
-Bei der Demonstrator-Anwendung “Self-ID" wird ein binärer Klassifikator (Selbstbild vs. Fremdbild) auf einer Population angelernt. Dieser Klassifikator lernt anhand von Eye-Tracking-Daten zu unterscheiden, welche Klasse von Gesichtsbildern der Nutzer gerade sieht. Der Trainingsprozess findet im Vorfeld – offline – und anhand von zuvor gesammelten Trainingsdaten statt. Sollte ein persönliches Enrollment notwendig sein, wird dieses auf dem Endgerät stattfinden und das angelernte Modell wird anschließend an den Server übertragen. Die Inferenz findet online auf dem Server statt. Die Eye-Tracking-Daten werden dabei vom Client an den Server übertragen. Dieser wertet das Ergebnis aus und leitet ggf. entsprechende Maßnahmen ein. 
+Bei der Demonstrator-Anwendung “Self-ID" wird ein binärer Klassifikator (Selbstbild vs. Fremdbild) auf einer Population angelernt. Dieser Klassifikator lernt anhand von Eye-Tracking-Daten zu unterscheiden, welche Klasse von Gesichtsbildern der Nutzer gerade sieht. Der Trainingsprozess findet im Vorfeld – offline – und anhand von zuvor gesammelten Trainingsdaten statt. Sollte ein persönliches Enrollment notwendig sein, wird dieses auf dem Endgerät stattfinden und das angelernte Modell wird anschließend an den Server übertragen. Die Inferenz findet online auf dem Server statt. Die Eye-Tracking-Daten werden dabei vom Client an den Server übertragen. Dieser wertet das Ergebnis aus und leitet ggf. entsprechende Maßnahmen ein.
+<!-- 1920 x 1080 -->
+<video width="80%" controls>
+  <source src="Self-ID_SKI-BMWK_DE.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 ## Maßnahmen 
 ### Adversarial Training 
@@ -61,7 +66,7 @@ Der Erfahrungswert war, dass eine Änderung ohne ausreichendes Wissen nicht zum 
 #### Implementierungshilfe 
 **“Tipps & Tricks”** 
 
-Eine Vielzahl an Beispielen und Implementierungsmöglichkeit finden sich in folgender Bibliothek:  Adversarial Robustness Toolbox[^6]
+Eine Vielzahl an Beispielen und Implementierungsmöglichkeit finden sich in folgender Bibliothek: Adversarial Robustness Toolbox[^6]
 
 **Code-Snippets**
 Eingabedaten verfälschen 

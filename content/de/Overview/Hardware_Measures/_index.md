@@ -3,7 +3,7 @@ date: 2021-09-27
 title: "Hardware-Maßnahmen"
 linkTitle: "Hardware-Maßnahmen"
 type: docs
-weight: 4
+weight: 5
 description: >
   Techniken des Trusted-Computing zum Schutz von KI-Anwendungen gegen Angreifer
 ---
