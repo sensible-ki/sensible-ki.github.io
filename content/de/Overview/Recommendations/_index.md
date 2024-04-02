@@ -2,7 +2,7 @@
 date: 2023-09-18
 title: "Empfehlungen"
 linkTitle: "Empfehlungen"
-weight: 7
+weight: 6
 type: docs
 description: >
   Schutzmaßnahmen der Prototypen und Anwendungsszenarien

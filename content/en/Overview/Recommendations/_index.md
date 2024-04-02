@@ -2,7 +2,7 @@
 date: 2023-09-18
 title: "Recommendations"
 linkTitle: "Recommendations"
-weight: 7
+weight: 6
 type: docs
 description: >
   Protective measures for prototypes and application scenarios

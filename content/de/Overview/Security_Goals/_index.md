@@ -3,7 +3,7 @@ date: 2021-09-17
 title: "Schutzziele"
 linkTitle: "Schutzziele"
 type: docs
-weight: 3
+weight: 2
 description: >
   Schutzziele für KI-Anwendungen
 ---

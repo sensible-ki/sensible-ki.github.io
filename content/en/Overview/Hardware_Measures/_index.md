@@ -3,7 +3,7 @@ date: 2021-09-27
 title: "Hardware Measures"
 linkTitle: "Hardware Measures"
 type: docs
-weight: 5
+weight: 4
 description: >
   Trusted computing techniques to protect AI applications against attackers
 ---

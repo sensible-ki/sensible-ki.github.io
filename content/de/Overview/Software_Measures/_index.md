@@ -3,7 +3,7 @@ date: 2022-03-08
 title: "Software-Maßnahmen"
 linkTitle: "Software-Maßnahmen"
 type: docs
-weight: 4
+weight: 3
 description: >
   Software-basierte Schutzmaßnahmen gegen Angriffe auf KI-Anwendungen
 ---

@@ -3,7 +3,7 @@ date: 2023-03-01
 title: "Evaluierung"
 linkTitle: "Evaluierung"
 type: docs
-weight: 6
+weight: 5
 description: >
   Evaluierung der Schutzmaßnahmen
 ---

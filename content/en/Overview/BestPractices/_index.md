@@ -3,7 +3,7 @@ date: 2024-02-26
 title: "Best Practices"
 linkTitle: "Best Practices"
 type: docs
-weight: 8
+weight: 7
 description: >
   Best Practice Recommendations
 ---
