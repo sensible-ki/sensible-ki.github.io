@@ -5,7 +5,7 @@ linkTitle: "Best Practices"
 type: docs
 weight: 7
 description: >
-  Best Practice Recommendations
+  Erfahrungswerte aus der Entwicklung der Prototypen
 ---
 
 ## Beschreibung der Schutzziele 

@@ -5,7 +5,7 @@ linkTitle: "Evaluation"
 type: docs
 weight: 5
 description: >
-  Evaluation of Protection Measures
+  Evaluation of protection measures
 ---
 
 Software-based and hardware-based protection measures can be evaluated by means
