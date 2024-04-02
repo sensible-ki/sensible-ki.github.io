@@ -5,7 +5,7 @@ linkTitle: "Best Practices"
 type: docs
 weight: 7
 description: >
-  Learnings from the development of the prototypes
+  Learnings from developing the prototypes
 ---
 
 ## Description of Security Goals 
