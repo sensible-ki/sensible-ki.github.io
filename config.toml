@@ -12,7 +12,7 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 # Highlighting config
 pygmentsCodeFences = true
@@ -52,20 +52,22 @@ anchor = "smart"
 [languages]
 [languages.en]
 title = "SENSIBLE-KI"
-description = "Privacy-friendly machine learning"
 languageName ="English"
 contentDir = "content/en"
 # Weight used for sorting.
 weight = 1
+[languages.en.params]
+description = "Privacy-friendly machine learning"
 privacy_policy = "https://www.aisec.fraunhofer.de/en/data_protection.html"
 
 [languages.de]
 title = "SENSIBLE-KI"
-description = "Privacy-friendly machine learning"
 languageName ="Deutsch"
 contentDir = "content/de"
 # Weight used for sorting.
 weight = 2
+[languages.de.params]
+description = "Privacy-friendly machine learning"
 privacy_policy = "https://www.aisec.fraunhofer.de/de/datenschutzerklaerung.html"
 
 # Menu
@@ -133,13 +135,14 @@ github_project_repo = "https://github.com/sensible-ki/sensible-ki.github.io"
 #gcs_engine_id = ""
 
 # Enable Algolia DocSearch
-algolia_docsearch = false
+#[params.search]
+#algolia = false
 
 # Enable Lunr.js offline search
-offlineSearch = false
+#offlineSearch = false
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
-prism_syntax_highlighting = false
+#prism_syntax_highlighting = false
 
 # User interface configuration
 [params.ui]
@@ -151,15 +154,14 @@ breadcrumb_disable = false
 sidebar_search_disable = false
 #  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
 navbar_logo = true
-# Set to true to disable the About link in the site footer
-footer_about_disable = true
+footer_about_enable = false
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
 # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
 # add "hide_feedback: true" to the page's front matter.
 [params.ui.feedback]
-enable = true
+enable = false
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
 no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
