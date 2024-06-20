@@ -5,14 +5,22 @@ linkTitle = "sensible-ki"
 +++
 
 {{< blocks/cover title="SENSIBLE-KI" image_anchor="top" height="min" color="dark" >}}
+
+<script src="/js/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"></script>
+<script src="/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"></script>
+
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="overview">
 		Mehr erfahren <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/presse/pressemitteilungen/2021/SensibleKI.html">
-		Pressemitteilung <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+	<a class="btn btn-lg btn-secondary mr-3 mb-4 dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Pressemitteilungen
 	</a>
-	<p class="lead mt-5">Das Projekt SENSIBLE-KI erforscht Lösungen, um Systeme der Künstlichen Intelligenz (KI) in mobilen Anwendungen und eingebetteten Systemen sicher und vertrauenswürdig zu gestalten. </p>
+	<div class="dropdown-menu bg-secondary" aria-labelledby="dropdownMenuButton">
+		<a class="dropdown-item text-white bg-secondary" href="https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/presse/pressemitteilungen/2021/SensibleKI.html">Projektstart <i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+		<a class="dropdown-item text-white bg-secondary" href="https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2024/forschungsprojekt-sensible-ki-abgeschlossen.html">Projektabschluss <i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+	</div>
+	<p class="lead mt-5 pt-2">Das Projekt SENSIBLE-KI erforscht Lösungen, um Systeme der Künstlichen Intelligenz (KI) in mobilen Anwendungen und eingebetteten Systemen sicher und vertrauenswürdig zu gestalten. </p>
 	{{< blocks/link-down color="info" >}}
 </div>
 {{< /blocks/cover >}}
