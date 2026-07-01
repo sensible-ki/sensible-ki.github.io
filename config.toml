@@ -59,6 +59,7 @@ weight = 1
 [languages.en.params]
 description = "Privacy-friendly machine learning"
 privacy_policy = "https://www.aisec.fraunhofer.de/en/data_protection.html"
+#imprint = "https://www.aisec.fraunhofer.de/en/imprint.html"
 
 [languages.de]
 title = "SENSIBLE-KI"
@@ -69,6 +70,7 @@ weight = 2
 [languages.de.params]
 description = "Privacy-friendly machine learning"
 privacy_policy = "https://www.aisec.fraunhofer.de/de/datenschutzerklaerung.html"
+#imprint = "https://www.aisec.fraunhofer.de/de/impressum.html"
 
 # Menu
 [menu]
@@ -96,7 +98,7 @@ privacy_policy = "https://www.aisec.fraunhofer.de/de/datenschutzerklaerung.html"
 section = ["HTML", "print"]
 
 [params]
-copyright = "Fraunhofer AISEC"
+copyright = "Fraunhofer AISEC | [Impressum](https://www.aisec.fraunhofer.de/de/impressum.html) |"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
