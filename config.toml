@@ -69,7 +69,7 @@ contentDir = "content/de"
 weight = 2
 [languages.de.params]
 description = "Privacy-friendly machine learning"
-privacy_policy = "https://www.aisec.fraunhofer.de/de/datenschutzerklaerung.html"
+privacy_policy = "https://www.aisec.fraunhofer.de/de/datenschutzinformation.html"
 #imprint = "https://www.aisec.fraunhofer.de/de/impressum.html"
 
 # Menu
